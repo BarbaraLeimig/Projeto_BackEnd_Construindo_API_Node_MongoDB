@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/BarbaraLeimig/Projeto_BackEnd_Construindo_API_Node_MongoDB#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.3"
   }
 }
