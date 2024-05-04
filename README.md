@@ -10,6 +10,12 @@ Projeto desenvolvido como uma das etapas de aprendizado na disciplina de Mobile 
 
 ## 📖 Especificações Técnicas
 
+## 📦 Pacotes Utilizados
+Os pacotes abaixo são do Node.js:
+- `Express` -> é um framework web que fornece uma camada fina de recursos essenciais para aplicativos web e APIs. Facilitar a criação de servidores HTTP robustos e eficientes em Node.js, simplificando o gerenciamento de rotas, middlewares e requisições HTTP
+- `Mongoose` -> biblioteca ODM (Object Data Modeling) que facilita a interação com o MongoDB, permitindo definir esquemas de dados e realizar operações de banco de dados de forma mais simples.
+- `Body-parser` -> é um pacote Node.js que analisa o corpo das solicitações HTTP e disponibiliza os dados analisados no objeto req.body nas rotas do Express.
+- `Cors` -> pacote Node.js que lida com a política de mesma origem (CORS - Cross-Origin Resource Sharing) para permitir ou bloquear solicitações HTTP de diferentes origens.
 
 ## 💻 Tecnologias Utilizadas
 
