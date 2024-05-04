@@ -1,0 +1,29 @@
+{
+  "name": "projeto_backend_construindo_api_node_mongodb",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido como uma das etapas de aprendizado na disciplina de Mobile com intuito de construir do zero miha primeira API utilizando as tecnologias Node.js, MongoDB e Postman para teste de rotas. O sistema consiste em uma API para um aplicativo PWA de To Do List.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarbaraLeimig/Projeto_BackEnd_Construindo_API_Node_MongoDB.git"
+  },
+  "keywords": [
+    "API;",
+    "Node.js;",
+    "MongoDB;",
+    "Postman;",
+    "BackEnd;"
+  ],
+  "author": "Barbara Leimig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarbaraLeimig/Projeto_BackEnd_Construindo_API_Node_MongoDB/issues"
+  },
+  "homepage": "https://github.com/BarbaraLeimig/Projeto_BackEnd_Construindo_API_Node_MongoDB#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
