@@ -16,7 +16,7 @@ userRoutes.route('/add').post((req, res) => {
         });
 });
 
-// api to get users
+// api to get all users
 userRoutes.route('/').get((req, res) => {
     User.find()
         .then(users => {
@@ -39,7 +39,7 @@ userRoutes.route('/user/:id').get((req, res) => {
         });
 });
 
-// api to update route
+// api to update user by ID
 userRoutes.route('/update/:id').put((req, res) => {
     let id = req.params.id;
     User.findById(id)
@@ -54,11 +54,11 @@ userRoutes.route('/update/:id').put((req, res) => {
             })
         })
         .catch(err => {
-            res.status(200).json({'status': 'success','mssg': 'Update complete'});
+            res.status(400).send({'status': 'failure','mssg': 'Unable to find data'});
         });
 });
 
-// api for delete
+// api for delete a user
 userRoutes.route('/delete/:id').delete((req, res) => {
     User.findByIdAndRemove({_id: req.params.id})
         .then(user => {

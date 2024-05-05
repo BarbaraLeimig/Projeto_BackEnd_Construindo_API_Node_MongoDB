@@ -16,6 +16,7 @@ Os pacotes abaixo são do Node.js:
 - `Mongoose` -> biblioteca ODM (Object Data Modeling) que facilita a interação com o MongoDB, permitindo definir esquemas de dados e realizar operações de banco de dados de forma mais simples.
 - `Body-parser` -> é um pacote Node.js que analisa o corpo das solicitações HTTP e disponibiliza os dados analisados no objeto req.body nas rotas do Express.
 - `Cors` -> pacote Node.js que lida com a política de mesma origem (CORS - Cross-Origin Resource Sharing) para permitir ou bloquear solicitações HTTP de diferentes origens.
+- `Nodemon` -> ferramenta que automatiza o processo de reinicialização do servidor sempre que detecta alterações nos arquivos do projeto
 
 ## 💻 Tecnologias Utilizadas
 
