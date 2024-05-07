@@ -28,7 +28,7 @@ listRoutes.route('/').get((req, res) => {
 });
 
 // api to get task by id
-listRoutes.route('/list/:id').get((req, res) => {
+listRoutes.route('/:id').get((req, res) => {
     let id = req.params.id;
     List.findById(id)
         .then(list => {
@@ -39,7 +39,7 @@ listRoutes.route('/list/:id').get((req, res) => {
         });
 });
 
-// api to update list by ID
+// api to update a task by ID
 listRoutes.route('/update/:id').put((req, res) => {
     let id = req.params.id;
     List.findById(id)
@@ -57,7 +57,8 @@ listRoutes.route('/update/:id').put((req, res) => {
 
 // api for delete a task
 listRoutes.route('/delete/:id').delete((req, res) => {
-    List.findByIdAndRemove({_id: req.params.id})
+    let id = req.params.id;
+    List.findOneAndDelete(id)
         .then(list => {
             res.status(200).json({'status': 'success','mssg': 'Delete successfully'});
         })

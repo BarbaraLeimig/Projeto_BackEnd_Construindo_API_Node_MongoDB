@@ -28,7 +28,7 @@ userRoutes.route('/').get((req, res) => {
 });
 
 // api to get user by id
-userRoutes.route('/user/:id').get((req, res) => {
+userRoutes.route('/:id').get((req, res) => {
     let id = req.params.id;
     User.findById(id)
         .then(user => {
@@ -60,7 +60,8 @@ userRoutes.route('/update/:id').put((req, res) => {
 
 // api for delete a user
 userRoutes.route('/delete/:id').delete((req, res) => {
-    User.findByIdAndRemove({_id: req.params.id})
+    let id = req.params.id;
+    User.findOneAndDelete(id)
         .then(user => {
             res.status(200).json({'status': 'success','mssg': 'Delete successfully'});
         })
