@@ -22,6 +22,7 @@ Projeto desenvolvido como uma das etapas de aprendizado na disciplina de Mobile 
         - GET `/:id`: Esta rota retorna uma tarefa específica da lista com base no ID fornecido na URL.
         - PUT `/update/:id`: Esta rota atualiza uma tarefa existente com o ID fornecido na URL. Ela espera os novos detalhes da tarefa no corpo da solicitação e, após a atualização bem-sucedida, retorna uma resposta com sucesso (status: 200).
         - DELETE `/delete/:id`: Esta rota exclui uma tarefa da lista com base no ID fornecido na URL.
+    - `Pasta postman` - contém capturas de tela dos testes de totas realizados para usuários e tarefas.
 
 ## 📦 Pacotes Utilizados
 Os pacotes abaixo são do Node.js:
