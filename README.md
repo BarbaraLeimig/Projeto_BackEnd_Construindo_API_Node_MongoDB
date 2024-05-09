@@ -14,7 +14,7 @@ Projeto desenvolvido como uma das etapas de aprendizado na disciplina de Mobile 
         - POST `/add`: Esta rota permite adicionar um novo usuário ao sistema. Ela espera um JSON contendo os detalhes do usuário no corpo da solicitação (req.body). Após salvar o novo usuário no banco de dados, retorna uma resposta com sucesso (status: 200) ou falha (status: 409).
         - GET `/`: Esta rota retorna todos os usuários existentes no banco de dados.
         - GET `/:id`: Esta rota retorna um usuário específico com base no ID fornecido na URL.
-        - PUT `/update/`:id: Esta rota atualiza um usuário existente com o ID fornecido na URL. Ela espera os novos detalhes do usuário no corpo da solicitação e, após a atualização bem-sucedida, retorna uma resposta com sucesso (status: 200).
+        - PUT `/update/:id`: Esta rota atualiza um usuário existente com o ID fornecido na URL. Ela espera os novos detalhes do usuário no corpo da solicitação e, após a atualização bem-sucedida, retorna uma resposta com sucesso (status: 200).
         - DELETE `/delete/:id`: Esta rota exclui um usuário com base no ID fornecido na URL.
     - `list.route.js` - define rotas para manipular operações relacionadas às listas de tarefas (List).
         - POST `/add`: Esta rota permite adicionar uma nova tarefa à lista. Ela espera um JSON contendo os detalhes da tarefa no corpo da solicitação (req.body). Após salvar a nova tarefa no banco de dados, retorna uma resposta com sucesso (status: 200) ou falha (status: 409).
